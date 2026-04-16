@@ -33,7 +33,7 @@ class FlareSolverrClient:
         try:
             async with aiohttp.ClientSession() as session:
                 async with session.get(
-                    f"{self.base_url}/health",
+                    f"{self.base_url}/",
                     timeout=aiohttp.ClientTimeout(total=10)
                 ) as resp:
                     if resp.status != 200:
